@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'isogram'
+require_relative '../lib/isogram'
 
 # Common test data version: 1.7.0 74869e8
 class IsogramTest < Minitest::Test

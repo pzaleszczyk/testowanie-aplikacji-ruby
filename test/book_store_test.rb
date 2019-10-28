@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'book_store'
+require_relative '../lib/book_store'
 
 # Common test data version: 1.4.0 33c6b60
 class BookStoreTest < Minitest::Test

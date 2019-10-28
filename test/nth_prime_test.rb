@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'nth_prime'
+require_relative '../lib/nth_prime'
 
 # Common test data version: 2.1.0 4a3ba76
 class NthPrimeTest < Minitest::Test

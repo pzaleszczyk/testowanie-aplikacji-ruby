@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'triangle'
+require_relative '../lib/triangle'
 
 # Common test data version: 1.2.0 55f89ca
 class TriangleTest < Minitest::Test
