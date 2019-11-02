@@ -1,4 +1,5 @@
 require_relative '../lib/book_store'
+
 describe BookStore do
   it "test only a single book" do
     basket = [1]
