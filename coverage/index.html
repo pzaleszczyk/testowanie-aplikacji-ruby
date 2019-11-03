@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-11-03T17:26:24+00:00">2019-11-03T17:26:24+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-11-03T17:38:23+00:00">2019-11-03T17:38:23+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         72479.37
+         72479.64
        </span>
     </span> hits/line)
   </h2>
@@ -87,7 +87,7 @@
         <td>30</td>
         <td>30</td>
         <td>0</td>
-        <td>35421.5</td>
+        <td>35423.5</td>
       </tr>
       
       <tr>
@@ -619,44 +619,44 @@
           <code class="ruby">    def self.calculate_price(cart)</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="5">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="5">
+          <span class="hits">15</span>
           
           <code class="ruby">      total = 0.00</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="6">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="6">
+          <span class="hits">15</span>
           
           <code class="ruby">      return total if cart.empty?</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="7">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="7">
+          <span class="hits">14</span>
           
           <code class="ruby">      @totals = []</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="8">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="8">
+          <span class="hits">14</span>
           
           <code class="ruby">      hash = Hash.new(0)</code>
         </li>
       
-        <li class="covered" data-hits="108" data-linenumber="9">
-          <span class="hits">108</span>
+        <li class="covered" data-hits="111" data-linenumber="9">
+          <span class="hits">111</span>
           
           <code class="ruby">      cart.each{ |book| hash[book] += 1 }</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="10">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="10">
+          <span class="hits">14</span>
           
           <code class="ruby">      evaluate(hash.values, total)</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="11">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="11">
+          <span class="hits">14</span>
           
           <code class="ruby">      @totals.min</code>
         </li>
@@ -679,26 +679,26 @@
           <code class="ruby">    def self.evaluate(books, total)</code>
         </li>
       
-        <li class="covered" data-hits="61988" data-linenumber="15">
-          <span class="hits">61988</span>
+        <li class="covered" data-hits="61992" data-linenumber="15">
+          <span class="hits">61992</span>
           
           <code class="ruby">      new_cart = books.sort.reverse</code>
         </li>
       
-        <li class="covered" data-hits="371816" data-linenumber="16">
-          <span class="hits">371816</span>
+        <li class="covered" data-hits="371828" data-linenumber="16">
+          <span class="hits">371828</span>
           
           <code class="ruby">      count = books.count{ |amount| amount &gt; 0 }</code>
         </li>
       
-        <li class="covered" data-hits="61988" data-linenumber="17">
-          <span class="hits">61988</span>
+        <li class="covered" data-hits="61992" data-linenumber="17">
+          <span class="hits">61992</span>
           
           <code class="ruby">      if count == 0</code>
         </li>
       
-        <li class="covered" data-hits="30442" data-linenumber="18">
-          <span class="hits">30442</span>
+        <li class="covered" data-hits="30444" data-linenumber="18">
+          <span class="hits">30444</span>
           
           <code class="ruby">        @totals &lt;&lt; total</code>
         </li>
@@ -709,20 +709,20 @@
           <code class="ruby">      else</code>
         </li>
       
-        <li class="covered" data-hits="31546" data-linenumber="20">
-          <span class="hits">31546</span>
+        <li class="covered" data-hits="31548" data-linenumber="20">
+          <span class="hits">31548</span>
           
           <code class="ruby">        for number in 1..count</code>
         </li>
       
-        <li class="covered" data-hits="61975" data-linenumber="21">
-          <span class="hits">61975</span>
+        <li class="covered" data-hits="61978" data-linenumber="21">
+          <span class="hits">61978</span>
           
           <code class="ruby">          new_cart[number-1] -= 1</code>
         </li>
       
-        <li class="covered" data-hits="61975" data-linenumber="22">
-          <span class="hits">61975</span>
+        <li class="covered" data-hits="61978" data-linenumber="22">
+          <span class="hits">61978</span>
           
           <code class="ruby">          evaluate(new_cart, total + discounted_price(number))</code>
         </li>
@@ -757,14 +757,14 @@
           <code class="ruby">    def self.discounted_price(amount)</code>
         </li>
       
-        <li class="covered" data-hits="61975" data-linenumber="28">
-          <span class="hits">61975</span>
+        <li class="covered" data-hits="61978" data-linenumber="28">
+          <span class="hits">61978</span>
           
           <code class="ruby">      total = @@book_price * amount</code>
         </li>
       
-        <li class="covered" data-hits="61975" data-linenumber="29">
-          <span class="hits">61975</span>
+        <li class="covered" data-hits="61978" data-linenumber="29">
+          <span class="hits">61978</span>
           
           <code class="ruby">      if amount == 5</code>
         </li>
@@ -775,8 +775,8 @@
           <code class="ruby">        total *= 0.75</code>
         </li>
       
-        <li class="covered" data-hits="59897" data-linenumber="31">
-          <span class="hits">59897</span>
+        <li class="covered" data-hits="59900" data-linenumber="31">
+          <span class="hits">59900</span>
           
           <code class="ruby">      elsif amount == 4</code>
         </li>
@@ -787,8 +787,8 @@
           <code class="ruby">        total *= 0.80</code>
         </li>
       
-        <li class="covered" data-hits="55759" data-linenumber="33">
-          <span class="hits">55759</span>
+        <li class="covered" data-hits="55762" data-linenumber="33">
+          <span class="hits">55762</span>
           
           <code class="ruby">      elsif amount == 3</code>
         </li>
@@ -799,26 +799,26 @@
           <code class="ruby">        total *= 0.90</code>
         </li>
       
-        <li class="covered" data-hits="47595" data-linenumber="35">
-          <span class="hits">47595</span>
+        <li class="covered" data-hits="47598" data-linenumber="35">
+          <span class="hits">47598</span>
           
           <code class="ruby">      elsif amount == 2</code>
         </li>
       
-        <li class="covered" data-hits="16049" data-linenumber="36">
-          <span class="hits">16049</span>
+        <li class="covered" data-hits="16050" data-linenumber="36">
+          <span class="hits">16050</span>
           
           <code class="ruby">        total *= 0.95</code>
         </li>
       
-        <li class="covered" data-hits="31546" data-linenumber="37">
-          <span class="hits">31546</span>
+        <li class="covered" data-hits="31548" data-linenumber="37">
+          <span class="hits">31548</span>
           
           <code class="ruby">      elsif amount == 1</code>
         </li>
       
-        <li class="covered" data-hits="31546" data-linenumber="38">
-          <span class="hits">31546</span>
+        <li class="covered" data-hits="31548" data-linenumber="38">
+          <span class="hits">31548</span>
           
           <code class="ruby">        total</code>
         </li>

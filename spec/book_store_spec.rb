@@ -16,6 +16,11 @@ describe BookStore do
     expect(BookStore.calculate_price(basket)).to eq 0.00
   end
 
+  it "Tests two different books" do
+    basket = [1, 2]
+    expect(BookStore.calculate_price(basket)).to eq 15.20
+  end
+
   it "Tests three different books" do
     basket = [1, 2, 3]
     expect(BookStore.calculate_price(basket)).to eq 21.60
