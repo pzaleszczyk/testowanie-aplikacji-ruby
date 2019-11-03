@@ -1,7 +1,7 @@
 require_relative '../lib/../lib/linked_list'
 
 describe Deque do
-  it "test push pop" do
+  it "Tests push pop" do
     deque = Deque.new
     deque.push(10)
     deque.push(20)
@@ -9,7 +9,7 @@ describe Deque do
     expect(10).to eq deque.pop
   end
 
-  it "test push shift" do
+  it "Tests push shift" do
     deque = Deque.new
     deque.push(10)
     deque.push(20)
@@ -17,7 +17,7 @@ describe Deque do
     expect(20).to eq deque.shift
   end
 
-  it "test unshift shift" do
+  it "Tests unshift shift" do
     deque = Deque.new
     deque.unshift(10)
     deque.unshift(20)
@@ -25,7 +25,7 @@ describe Deque do
     expect(10).to eq deque.shift
   end
 
-  it "test unshift pop" do
+  it "Tests unshift pop" do
     deque = Deque.new
     deque.push(10)
     deque.push(20)
@@ -39,7 +39,7 @@ describe Deque do
     expect(30).to eq deque.shift
   end
 
-  it "test pop to empty" do
+  it "Tests pop to empty" do
     deque = Deque.new
     deque.push(10)
     expect(10).to eq deque.pop
@@ -47,7 +47,7 @@ describe Deque do
     expect(20).to eq deque.shift
   end
 
-  it "test shift to empty" do
+  it "Tests shift to empty" do
     deque = Deque.new
     deque.unshift(10)
     expect(10).to eq deque.shift
