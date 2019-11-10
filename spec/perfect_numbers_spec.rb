@@ -7,7 +7,6 @@ describe PerfectNumber do
     end
 
     it "Classifies deficient" do
-      puts PerfectNumber.classify(13)
       expect(PerfectNumber.classify(13)).to be == "deficient"
     end
 
