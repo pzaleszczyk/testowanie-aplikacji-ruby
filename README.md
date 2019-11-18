@@ -1,6 +1,4 @@
 # testowanie-aplikacji-ruby
 [![Build Status](https://travis-ci.org/jsildatk/testowanie-aplikacji-ruby.svg?branch=master)](https://travis-ci.org/jsildatk/testowanie-aplikacji-ruby)
-<a href="https://codeclimate.com/github/jsildatk/testowanie-aplikacji-ruby/maintainability"><img src="https://api.codeclimate.com/v1/badges/42865d30aafd1b0705f0/maintainability" /></a>
-<a href="https://codeclimate.com/github/jsildatk/testowanie-aplikacji-ruby/test_coverage"><img src="https://api.codeclimate.com/v1/badges/42865d30aafd1b0705f0/test_coverage" /></a>
-
-https://htmlpreview.github.io/?https://github.com/jsildatk/testowanie-aplikacji-ruby/blob/master/coverage/index.html#_AllFiles
+[![Test Coverage](https://api.codeclimate.com/v1/badges/42865d30aafd1b0705f0/test_coverage)](https://codeclimate.com/github/jsildatk/testowanie-aplikacji-ruby/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/42865d30aafd1b0705f0/maintainability)](https://codeclimate.com/github/jsildatk/testowanie-aplikacji-ruby/maintainability)
